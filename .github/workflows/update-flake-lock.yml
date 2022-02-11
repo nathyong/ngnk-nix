@@ -1,4 +1,4 @@
-name: Update niv
+name: Update flake.lock
 
 on:
   schedule:
