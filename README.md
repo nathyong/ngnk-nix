@@ -1,18 +1,7 @@
-# Opinionated Nix repository template
+# Nix flake for [ngn/k](https://codeberg.org/ngn/k)
 
-Based on [nix.dev](https://nix.dev) tutorials, repository template to get you started with [Nix](https://nixos.org/):
+This repository defines a nixpkgs overlay and nix flake for ngn's implementation of the K language (k6 dialect).
 
-- [niv](https://github.com/nmattia/niv) for painless dependency management (aka pinning) with a daily cronjob to bump dependencies
-- [gitignore.nix](https://github.com/hercules-ci/gitignore.nix) for respecting `.gitignore` when using your project as a source
-- [pre-commit-hooks.nix](https://github.com/cachix/pre-commit-hooks.nix) for running linters (defaults to `shellcheck`, `nix-linter` and `nixpkgs-fmt`) when committing and on the CI
-- [direnv](https://direnv.net/) for automatically loading your developer environment
-- [GitHub Actions](https://github.com/features/actions) for CI with [dependabot](https://dependabot.com/) automatically bumping GitHub Actions versions
+The interpreter is automatically tested on Linux x86_64 and MacOS x86_64 via Nix.
 
-## Getting started
-
-1. Follow tutorial for [creating a binary cache](https://nix.dev/tutorials/continuous-integration-github-actions.html)
-2. Replace ``nix-getting-started-template`` in ``.github/workflows/test.yml`` with the name of your binary cache
-
-## Using the project
-
-Follow [direnv setup](https://nix.dev/tutorials/declarative-and-reproducible-developer-environments.html#direnv-automatically-activating-the-environment-on-directory-change) and run `direnv allow`
+The actual Nix package for `k` is located at [`k/default.nix`](k/default.nix).  Currently this is built with Clang 12, and comes with a convenience wrapper that allows it to be invoked as `k` in both interactive and batch mode.
