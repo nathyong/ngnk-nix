@@ -1,9 +1,8 @@
 { stdenv, fetchurl, clang_12, rlwrap, k-git }:
 
-stdenv.mkDerivation rec {
+stdenv.mkDerivation {
   pname = "k";
   version = "unstable-${k-git.lastModifiedDate}";
-  rev = k-git.rev;
   src = k-git;
 
   enableParallelBuilding = true;
