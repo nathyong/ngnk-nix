@@ -1,4 +1,4 @@
-{ stdenv, fetchurl, clang_12, rlwrap, k-git }:
+{ stdenv, clang_12, rlwrap, k-git }:
 
 stdenv.mkDerivation {
   pname = "k";
