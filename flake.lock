@@ -34,11 +34,11 @@
     "k-git": {
       "flake": false,
       "locked": {
-        "lastModified": 1663053316,
-        "narHash": "sha256-grm+PnGF1Zy9aFJaokPOWvKX3UR/D5h+Qg3btKnG3jY=",
+        "lastModified": 1663188211,
+        "narHash": "sha256-+Rtjiprpc+eNLTCrJsuMWARoHcmsySAGXmeJCvWg6SI=",
         "ref": "refs/heads/master",
-        "rev": "186c40d4f6ecb548f291686a2ce263f32eb81f3f",
-        "revCount": 3182,
+        "rev": "47adfbf22fcaa432147412426fe167d72bea3328",
+        "revCount": 3201,
         "type": "git",
         "url": "https://codeberg.org/ngn/k.git"
       },
