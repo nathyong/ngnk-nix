@@ -9,7 +9,7 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [ clang_12 ];
 
-  makeFlags = [ "k-dflt" "CC=clang" ];
+  makeFlags = [ "k" "CC=clang" ];
 
   prePatch = ''
     patchShebangs .
